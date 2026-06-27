@@ -3,13 +3,14 @@ import heroImg from "@/assets/hero.jpg";
 import interiorImg from "@/assets/interior.jpg";
 import constructionImg from "@/assets/construction.jpg";
 import bricksImg from "@/assets/bricks.jpg";
+import Logo from "@/assets/tig.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Meridian Group — Interiors, Construction & Bricks" },
+      { title: "Tostyam Infa Group. | Interior Design, Construction & Bricks" },
       { name: "description", content: "An integrated design and build group crafting interiors, structures and the materials that shape them." },
-      { property: "og:title", content: "Meridian Group — Interiors, Construction & Bricks" },
+      { property: "og:title", content: "Tostyam Infra Group — Interiors, Construction & Bricks" },
       { property: "og:description", content: "An integrated design and build group crafting interiors, structures and the materials that shape them." },
     ],
   }),
@@ -41,11 +42,12 @@ function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/60">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-16 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 group">
-          <span className="w-7 h-7 rounded-full bg-foreground flex items-center justify-center">
-            <span className="font-serif text-background text-sm leading-none">M</span>
-          </span>
-          <span className="font-serif text-xl tracking-tight">Meridian</span>
+        <a href="#top" className="flex items-center gap-3 group">
+           <img
+            src={Logo}
+            alt="Tostyam Infa Logo"
+            className="w-18 h-18 object-contain"
+           />
         </a>
         <nav className="hidden md:flex items-center gap-9 text-sm">
           {links.map((l) => (
@@ -70,7 +72,7 @@ function Hero() {
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground mb-8">
               <span className="w-8 h-px bg-accent" />
-              Est. 1998 — Three disciplines, one studio
+              Est. 2026 — Three disciplines, one studio
             </div>
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-[6.5rem] leading-[0.95] tracking-tight">
               Spaces, structures<br />
@@ -78,7 +80,7 @@ function Hero() {
               between them.
             </h1>
             <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
-              Meridian is an integrated design and build group. We compose interiors, raise the buildings that hold them, and manufacture the bricks they are built from.
+              TIG is an integrated design and build group. We compose interiors, raise the buildings that hold them, and manufacture the bricks they are built from.
             </p>
             <div className="mt-10 flex items-center gap-4">
               <a href="#projects" className="bg-foreground text-background px-6 py-3 rounded-full text-sm hover:bg-accent transition-colors">
@@ -269,11 +271,11 @@ function Contact() {
           </p>
         </div>
         <div className="lg:col-span-5 space-y-8 text-sm">
-          <ContactRow label="General" v="hello@meridian.group" />
-          <ContactRow label="Interiors" v="interiors@meridian.group" />
-          <ContactRow label="Construction" v="build@meridian.group" />
-          <ContactRow label="Bricks (trade)" v="trade@meridian.group" />
-          <ContactRow label="Studio" v="14 Industrial Avenue, Bengaluru 560058" />
+          <ContactRow label="General" v="hello@tig.group" />
+          <ContactRow label="Interiors" v="interiors@tig.group" />
+          <ContactRow label="Construction" v="build@tig.group" />
+          <ContactRow label="Bricks (trade)" v="trade@tig.group" />
+          <ContactRow label="Studio" v="Bhubaneswar, Odisha" />
           <ContactRow label="Phone" v="+91 80 4000 0000" />
         </div>
       </div>
@@ -294,7 +296,7 @@ function Footer() {
   return (
     <footer className="bg-foreground text-background/60 border-t border-background/10">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-8 flex flex-wrap items-center justify-between gap-4 text-xs">
-        <div>© {new Date().getFullYear()} Meridian Group. All rights reserved.</div>
+        <div>© {new Date().getFullYear()} Toatyam infra group. All rights reserved.</div>
         <div className="flex gap-6">
           <a href="#" className="hover:text-background">Instagram</a>
           <a href="#" className="hover:text-background">LinkedIn</a>
